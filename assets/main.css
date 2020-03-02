@@ -1,0 +1,376 @@
+@font-face {
+  font-family: 'Root UI Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Root UI Regular'), local('Root UI Regular'), url('../assets/fonts/PT_Root_UI_Regular.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Root UI Regular';
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Prosto One', sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 20px;
+  color: gray;
+  font-weight: normal;
+}
+
+
+section {
+  margin-top: 100px;
+  padding: 0 100px;
+}
+
+section:nth-child(1), section:nth-child(2) {
+  margin-top: 0;
+}
+
+.mobile {
+  display: none !important;
+}
+
+h1.gray {
+  color: gray;
+  margin: 50px 0;
+  font-size: 48px;
+}
+
+.c1, .c2, .c3 {
+  /*border: 1px solid red;*/
+}
+
+.top {
+  text-align: right;
+  padding: 0 100px 20px 0;
+}
+
+.top a {
+  color: gray;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+/*.meet {*/
+/*  padding: 0 100px;*/
+/*}*/
+
+.meet .c2{
+  padding: 55px 100px 0 55px;
+}
+
+.meet h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.meet, .project {
+  display: flex;
+}
+
+.meet .c1 {
+  width: 360px;
+}
+.meet .c2 {
+  padding-left: 60px;
+}
+.meet .c2_inner{
+  display: flex;
+  padding-top: 50px;
+}
+
+
+.meet .c2_1, .meet .c2_2 {
+  flex: 1 1 50%;
+}
+.meet .c2_2 {
+  padding-left: 60px;
+}
+
+.portfolio {
+  margin-top: 100px;
+}
+
+.project {
+  margin-top: 100px;
+}
+
+.project:first-of-type {
+  margin-top: 0;
+}
+
+.project h2 {
+  font-size: 64px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 79px;
+}
+
+.project p{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+}
+
+.project-l .c1, .project-l .c2, .project-r .c1, .project-r .c2 {
+  flex: 1 1 50%;
+}
+
+.project-l .c1 {
+  padding-right: 20px;
+}
+
+.project-l .c1, .project-r .c2 {
+  padding-top: 90px;
+}
+
+.project-r .c1, .project-l .c2 {
+  min-width: 570px;
+}
+
+.project.project-l {
+  margin-right: -100px;
+}
+
+.project.project-r {
+  margin-left: -100px;
+}
+
+.project-r {
+  padding-right: 100px;
+}
+
+.project-r .c2 {
+  padding-left: 60px;
+  order: 1;
+}
+
+.prev, .next {
+  cursor: pointer;
+}
+
+.about-me {
+  margin-top: 100px;
+  /*padding: 0 100px;*/
+
+}
+
+.experience > div {
+  display: flex;
+}
+
+.experience .c1, .experience .c2 {
+  flex: 1 1 50%;
+}
+
+.experience .row1, .experience .row2 {
+  padding: 20px 0;
+  /*border-top: 1px solid gray;*/
+}
+
+.experience .row2 {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;;
+}
+
+.about-me .c1 {
+  width: 50%;
+  font-family: 'Prosto One', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  vertical-align: top;
+}
+
+.about-me .c2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+.speech {
+  font-family: 'Prosto One', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  width: 50%;
+  padding-bottom: 100px;
+  float: right;
+}
+
+.contacts {
+  clear: both;
+}
+
+.contacts a {
+  font-family: 'Prosto One', sans-serif;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+
+.contacts div:last-child {
+  text-align: left;
+}
+
+.contacts .flex {
+  display: flex;
+}
+
+.contacts .flex div {
+  flex: 1 1 33%;
+  justify-content: center;
+}
+
+.contacts .flex div:last-child {
+  text-align: right;
+}
+.contacts .flex div:nth-child(2) {
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  section {
+    margin-top: 100px;
+    padding: 0 30px;
+  }
+
+  section:first-child {
+    margin-top: 0;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+
+  h1.gray {
+    margin: 0;
+  }
+
+  .top {
+    display: flex;
+    padding: 0 10px 20px 10px;
+    text-align: center;
+  }
+
+  .top a {
+    padding: 0;
+  }
+  .top a {
+    flex: 1 1 25%;
+    justify-content: center;
+  }
+
+  .meet {
+    padding: 0 10px;
+  }
+  .meet h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .meet h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .meet .c2 {
+    padding: 0 0 0 20px;
+  }
+
+  .meet .c2_inner {
+    display: block;
+    padding-top: 10px;
+  }
+
+  .meet .c2_2 {
+    padding-left: 0;
+  }
+
+  .portrait-full {
+    display: none;
+  }
+
+  .portfolio h1 {
+    padding: 0;
+  }
+
+  .experience > div {
+    display: block;
+  }
+
+  .experience .c1 {
+    font-size: 16px;
+  }
+  .experience .c2 {
+    font-size: 16px;
+  }
+
+  .project {
+    display: block;
+    margin-top: 0;
+  }
+
+  .project h2 {
+    font-size: 20px;
+  }
+
+  .project-l .c1, .project-r .c2 {
+    padding-top: 0;
+  }
+
+  .project-r, .project-l {
+    padding: 0;
+  }
+
+  .project-r .c2 {
+    padding: 0;
+  }
+
+  .project.project-l {
+    margin-right: 0;
+  }
+
+  .project.project-r {
+    margin-left: 0;
+  }
+
+  .speech {
+    width: initial;
+    float: none;
+    padding-bottom: initial;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .contacts .flex {
+    display: block;
+  }
+}
