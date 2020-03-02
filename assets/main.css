@@ -1,3 +1,21 @@
+.carousel-image {
+  display: block;
+  height: auto;
+  /* set min-width,
+     allow images to determine cell width */
+  min-width: 150px;
+  max-width: 100%;
+  margin-right: 10px;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.carousel.is-fullscreen .carousel-image {
+  height: auto;
+  max-height: 100%;
+}
+
 @font-face {
   font-family: 'Root UI Regular';
   font-style: normal;
@@ -63,9 +81,6 @@ h1.gray {
   text-decoration: none;
 }
 
-/*.meet {*/
-/*  padding: 0 100px;*/
-/*}*/
 
 .meet .c2{
   padding: 55px 100px 0 55px;
@@ -78,7 +93,11 @@ h1.gray {
   line-height: 59px;
 }
 
-.meet, .project {
+.project {
+  display: flex;
+}
+
+.flex {
   display: flex;
 }
 
@@ -140,7 +159,7 @@ h1.gray {
 }
 
 .project-r .c1, .project-l .c2 {
-  min-width: 570px;
+  /*min-width: 570px;*/
 }
 
 .project.project-l {
@@ -256,7 +275,7 @@ h1.gray {
 @media (max-width: 768px) {
   section {
     margin-top: 100px;
-    padding: 0 30px;
+    padding: 0 15px;
   }
 
   section:first-child {
@@ -271,14 +290,21 @@ h1.gray {
     display: block !important;
   }
 
+  .carousel {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
   h1.gray {
     margin: 0;
+    font-size: 29px;
   }
 
   .top {
     display: flex;
     padding: 0 10px 20px 10px;
     text-align: center;
+    font-size: 10px;
   }
 
   .top a {
@@ -290,7 +316,11 @@ h1.gray {
   }
 
   .meet {
-    padding: 0 10px;
+    /*padding: 0 10px;*/
+  }
+
+  .meet .c1 {
+    width: initial;
   }
   .meet h1 {
     font-size: 20px;
@@ -365,12 +395,17 @@ h1.gray {
     width: initial;
     float: none;
     padding-bottom: initial;
+    font-size: 18px;
   }
 
-}
-
-@media (max-width: 600px) {
   .contacts .flex {
     display: block;
+  }
+
+  .contacts .flex div {
+    text-align: left !important;
+  }
+  .contacts a {
+    font-size: 18px;
   }
 }
