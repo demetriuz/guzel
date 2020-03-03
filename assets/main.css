@@ -309,8 +309,13 @@ h1.gray {
 
 @media (max-width: 1000px) {
   section {
-    margin-top: 120px;
+    margin-top: 60px;
     padding: 0 15px;
+  }
+
+  h1, .meet h1 {
+    line-height: 28px;
+    font-size: 20px;
   }
 
   section:first-child {
@@ -351,15 +356,17 @@ h1.gray {
   }
 
   .meet {
+    padding-top: 60px;
     /*padding: 0 10px;*/
   }
 
   .meet .c1 {
     width: initial;
+    padding-top: 0;
   }
   .meet h1 {
-    font-size: 20px;
-    line-height: 20px;
+    /*font-size: 20px;*/
+    /*line-height: 20px;*/
   }
   .meet h2 {
     font-size: 18px;
@@ -378,8 +385,22 @@ h1.gray {
     padding-left: 0;
   }
 
-  .portrait-full {
-    display: none;
+  /*
+  .meet .mobile {
+    padding-bottom: 40px;
+  }
+   */
+
+  .meet .c2_1, .meet .c2_2 {
+    padding-top: 40px;
+  }
+
+  .portrait.mobile {
+    margin-top: -10px;
+  }
+
+  .portfolio {
+    margin-top: 60px;
   }
 
   .portfolio h1 {
@@ -399,15 +420,25 @@ h1.gray {
 
   .project {
     display: block;
+    margin-top: 80px;
+  }
+
+  .project:first-of-type {
     margin-top: 0;
   }
 
   .project h2 {
     font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 0;
+  }
+
+  .project p {
+    margin-top: 5px;
   }
 
   .project-l .c1, .project-r .c2 {
-    padding-top: 0;
+    padding-top: 30px;
   }
 
   .project-r, .project-l {
@@ -426,12 +457,29 @@ h1.gray {
     margin-left: 0;
   }
 
+  .about-me {
+    margin-top: 80px;
+  }
+
+  .about-me .experience {
+    margin-top: 0;
+  }
+
+  .experience .row1, .experience .row2 {
+    padding: 20px 0;
+  }
+
+  .contacts .gray {
+    margin-bottom: 10px;
+  }
+
   .contacts .flex {
     display: block;
   }
 
   .contacts .flex div {
     text-align: left !important;
+    height: 30px;
   }
   .contacts a {
     font-size: 18px;
