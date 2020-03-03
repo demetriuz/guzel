@@ -49,6 +49,9 @@ h3 {
   font-weight: normal;
 }
 
+a {
+  color: gray;
+}
 
 section {
   margin-top: 200px;
@@ -57,6 +60,10 @@ section {
 
 section:nth-child(1), section:nth-child(2) {
   margin-top: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .mobile {
@@ -242,43 +249,37 @@ h1.gray {
   opacity: 0.8;
 }
 
+.contacts h1.gray {
+  margin-bottom: 50px;
+}
+
 .contacts {
   clear: both;
+  margin-bottom: 60px;
 }
 
 .contacts a {
+  text-decoration: none;
   font-family: 'Prosto One', sans-serif;
   color: black;
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
-  line-height: 48px;
+  line-height: 60px;
 }
 
-
-.contacts div:last-child {
-  text-align: left;
+.contacts .icons {
+  margin-top: 10px;
 }
 
-.contacts .flex {
-  display: flex;
+.contacts .icons a {
+  margin-right: 40px;
 }
 
-.contacts .flex div {
-  flex: 1 1 33%;
-  justify-content: center;
-}
-
-.contacts .flex div:last-child {
-  text-align: right;
-}
-.contacts .flex div:nth-child(2) {
-  text-align: center;
-}
-
-.contacts .gray {
-  margin-bottom: 80px;
+.contacts img {
+  height: 80px;
+  width: 80px;
 }
 
 @media (max-width: 1390px) {
@@ -358,17 +359,13 @@ h1.gray {
 
   .meet {
     padding-top: 60px;
-    /*padding: 0 10px;*/
   }
 
   .meet .c1 {
     width: initial;
     padding-top: 0;
   }
-  .meet h1 {
-    /*font-size: 20px;*/
-    /*line-height: 20px;*/
-  }
+
   .meet h2 {
     font-size: 18px;
     line-height: 20px;
@@ -385,12 +382,6 @@ h1.gray {
   .meet .c2_2 {
     padding-left: 0;
   }
-
-  /*
-  .meet .mobile {
-    padding-bottom: 40px;
-  }
-   */
 
   .meet .c2_1, .meet .c2_2 {
     padding-top: 40px;
@@ -470,19 +461,34 @@ h1.gray {
     padding: 20px 0;
   }
 
-  .contacts .gray {
+  .contacts h1.gray {
     margin-bottom: 10px;
   }
 
-  .contacts .flex {
-    display: block;
-  }
 
-  .contacts .flex div {
-    text-align: left !important;
-    height: 30px;
-  }
+  /*.contacts .flex {*/
+  /*  display: block;*/
+  /*}*/
+
+  /*.contacts .flex div {*/
+  /*  text-align: left !important;*/
+  /*  height: 30px;*/
+  /*}*/
   .contacts a {
     font-size: 18px;
+    line-height: 40px;
   }
+  .contacts .icons img.mobile {
+    display: inline !important;
+  }
+
+  .contacts img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .contacts .icons a {
+    margin-right: 20px;
+  }
+
 }
