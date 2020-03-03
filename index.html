@@ -20,10 +20,10 @@
     gtag('config', 'UA-159343691-1');
   </script>
 
-  <link rel="stylesheet" href="assets/js/flickity/flickity.css">
-  <link rel="stylesheet" href="assets/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Prosto+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/js/flickity/flickity.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
@@ -246,10 +246,10 @@
 
 <script>
     $(function () {
-        var pageDots = false;
-        if (screen.width <= 768) {
-            pageDots = true;
-        }
+        // var pageDots = false;
+        // if (screen.width <= 768) {
+        //     pageDots = true;
+        // }
 
         var initialIndex = 0;
 
@@ -269,7 +269,7 @@
                 initialIndex: initialIndex,
                 fullscreen: true,
                 lazyLoad: 2,
-                pageDots: pageDots
+                pageDots: true
             });
 
             $el.find('.next').click(function () {

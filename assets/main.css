@@ -1,12 +1,13 @@
+.carousel-arrows {
+  display: none;
+}
+
 .carousel-image {
   display: block;
   height: auto;
-  /* set min-width,
-     allow images to determine cell width */
   min-width: 150px;
   max-width: 100%;
   margin-right: 10px;
-  /* vertically center */
   top: 50%;
   transform: translateY(-50%)
 }
@@ -224,7 +225,7 @@ h1.gray {
 }
 
 .about-me .c1 {
-  width: 50%;
+  /*width: 50%;*/
   font-family: 'Prosto One', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -437,7 +438,7 @@ h1.gray {
     margin-top: 5px;
   }
 
-  .project-l .c1, .project-r .c2 {
+  .project-l .c1 {
     padding-top: 30px;
   }
 
