@@ -28,6 +28,8 @@ body {
   font-family: 'Root UI Regular';
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 h1, h2, h3 {
@@ -48,7 +50,7 @@ h3 {
 
 
 section {
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 0 100px;
 }
 
@@ -62,7 +64,7 @@ section:nth-child(1), section:nth-child(2) {
 
 h1.gray {
   color: gray;
-  margin: 50px 0;
+  margin: 50px 0 100px 0;
   font-size: 48px;
 }
 
@@ -72,7 +74,7 @@ h1.gray {
 
 .top {
   text-align: right;
-  padding: 0 100px 20px 0;
+  padding: 20px 100px 20px 0;
 }
 
 .top a {
@@ -83,14 +85,14 @@ h1.gray {
 
 
 .meet .c2{
-  padding: 55px 100px 0 55px;
+  padding: 120px 0 0 55px;
 }
 
 .meet h1 {
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 59px;
+  font-size: 36px;
+  line-height: 48px;
 }
 
 .project {
@@ -103,13 +105,14 @@ h1.gray {
 
 .meet .c1 {
   width: 360px;
+  padding-top: 54px;
 }
 .meet .c2 {
   padding-left: 60px;
 }
 .meet .c2_inner{
   display: flex;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 
@@ -121,11 +124,11 @@ h1.gray {
 }
 
 .portfolio {
-  margin-top: 100px;
+  margin-top: 180px;
 }
 
 .project {
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 .project:first-of-type {
@@ -133,10 +136,11 @@ h1.gray {
 }
 
 .project h2 {
-  font-size: 64px;
+  font-size: 36px;
   font-weight: normal;
   font-style: normal;
-  line-height: 79px;
+  line-height: 70px;
+  padding-bottom: 10px;
 }
 
 .project p{
@@ -150,8 +154,15 @@ h1.gray {
   flex: 1 1 50%;
 }
 
+.carousel-arrows {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
 .project-l .c1 {
   padding-right: 20px;
+  position: relative;
 }
 
 .project-l .c1, .project-r .c2 {
@@ -177,6 +188,7 @@ h1.gray {
 .project-r .c2 {
   padding-left: 60px;
   order: 1;
+  position: relative;
 }
 
 .prev, .next {
@@ -184,9 +196,13 @@ h1.gray {
 }
 
 .about-me {
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   /*padding: 0 100px;*/
 
+}
+
+.experience {
+  margin-top: -40px;
 }
 
 .experience > div {
@@ -198,7 +214,7 @@ h1.gray {
 }
 
 .experience .row1, .experience .row2 {
-  padding: 20px 0;
+  padding: 40px 0;
   /*border-top: 1px solid gray;*/
 }
 
@@ -223,17 +239,6 @@ h1.gray {
   font-size: 18px;
   line-height: 30px;
   opacity: 0.8;
-}
-
-.speech {
-  font-family: 'Prosto One', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 48px;
-  width: 50%;
-  padding-bottom: 100px;
-  float: right;
 }
 
 .contacts {
@@ -271,10 +276,40 @@ h1.gray {
   text-align: center;
 }
 
+.contacts .gray {
+  margin-bottom: 80px;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1390px) {
+  .meet .c2 {
+    padding-top: 54px;
+  }
+  .project-r .c2 {
+    padding-top: 0;
+  }
+  .project-l .c1 {
+    padding-top: 0;
+  }
+  .carousel-arrows {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1220px) {
+  .meet .c2_inner {
+    display: block;
+    padding-top: 60px;
+  }
+
+  .meet .c2_inner .c2_2 {
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 1000px) {
   section {
-    margin-top: 100px;
+    margin-top: 120px;
     padding: 0 15px;
   }
 
@@ -389,13 +424,6 @@ h1.gray {
 
   .project.project-r {
     margin-left: 0;
-  }
-
-  .speech {
-    width: initial;
-    float: none;
-    padding-bottom: initial;
-    font-size: 18px;
   }
 
   .contacts .flex {
