@@ -44,7 +44,7 @@
       <img class="portrait mobile" width="100" height="100" src="./assets/img/me_mob.jpg" alt="Гузель Лазарко">
     </div>
     <div class="c2">
-      <h1>Привет! <br>Меня зовут Гузель, я начинающий дизайнер</h1>
+      <h1>Привет! <br>Меня зовут Гузель, <span class="nowrap">я начинающий</span> дизайнер</h1>
 
       <div class="c2_inner desktop">
         <div class="c2_1">
@@ -108,12 +108,6 @@
       <p>
         <a href="https://www.behance.net/gallery/92920041/prilozhenie-dlja-podbora-ipoteki" target="_blank">Концепт</a>
         мобильного приложения для подбора и оформления ипотеки</p>
-
-      <div class="carousel-arrows desktop">
-        <span class="prev">←</span> <span class="current">1</span> / <span class="total"></span> <span
-          class="next">→</span>
-      </div>
-
     </div>
     <div class="c2">
       <div class="carousel">
@@ -134,11 +128,6 @@
         <a href="https://www.behance.net/gallery/88193101/Makeup-Hacker" target="_blank">Концепт</a>
         мобильного приложения для анализа состава косметки по этикетке
       </p>
-
-      <div class="carousel-arrows desktop">
-        <span class="prev">←</span> <span class="current">1</span> / <span class="total"></span> <span
-          class="next">→</span>
-      </div>
     </div>
     <div class="c1">
       <div class="carousel">
@@ -155,12 +144,6 @@
     <div class="c1">
       <h2>Сайт-визитка</h2>
       <p>Разработка сайта-портфолио для визажиста на Тильде в Zero Block</p>
-
-      <div class="carousel-arrows desktop">
-        <span class="prev">←</span> <span class="current">1</span> / <span class="total"></span> <span
-          class="next">→</span>
-      </div>
-
     </div>
     <div class="c2">
       <div class="carousel">
@@ -180,11 +163,6 @@
         <br>
         Учебный проект в рамках курса SkillBox
       </p>
-
-      <div class="carousel-arrows desktop">
-        <span class="prev">←</span> <span class="current">1</span> / <span class="total"></span> <span
-          class="next">→</span>
-      </div>
     </div>
     <div class="c1">
       <div class="carousel">
@@ -209,7 +187,8 @@
         Работала в банке, бухгалтером в торговой компании, финансовым
         менеджером в рекламных агентствах. Общий опыт работы 6 лет.
         Увлеклась дизайном и решила сменить профессию.
-        Подробное резюме hh.ru
+        Подробное резюме на
+        <a href="https://hh.ru/resume/e88a22d0ff078872e80039ed1f5464516d6757" target="_blank">hh.ru</a>
       </div>
     </div>
     <div class="row2">
@@ -234,16 +213,10 @@
   <div class="icons">
     <a href="tg://resolve?domain=lazarko" target="_blank">
       <img src="./assets/img/telega_dsk.svg">
-<!--      <img src="./assets/img/telega_mob.svg" class="mobile">-->
     </a>
     <a href="https://www.behance.net/guzellazarko" target="_blank">
       <img src="./assets/img/behance_dsk.svg">
-<!--      <img src="./assets/img/behance_mob.svg" class="mobile">-->
     </a>
-    <!--
-    <a href="https://www.facebook.com/glazarko" target="_blank">
-      <img src="./assets/img/facebook_dsk.svg">
-    </a>-->
   </div>
 </section>
 
@@ -253,40 +226,17 @@
 
 <script>
     $(function () {
-        var initialIndex = 0;
-
-        $('.current').each(function (idx, el) {
-            $(el).text(initialIndex + 1);
-        });
-
         $('.project').each(function (idx, el) {
-
-            var $el = $(el);
-            $el.find('.total').text($el.find('.carousel img').length);
-
-            var $carousel = $el.find('.carousel').flickity({
+            $(el).find('.carousel').flickity({
                 imagesLoaded: true,
                 percentPosition: false,
                 prevNextButtons: false,
-                initialIndex: initialIndex,
+                initialIndex: 0,
                 fullscreen: true,
                 lazyLoad: 2,
                 pageDots: true
             });
-
-            $el.find('.next').click(function () {
-                $carousel.flickity('next', true);
-            });
-
-            $el.find('.prev').click(function () {
-                $carousel.flickity('previous', true);
-            });
-
-            $carousel.on('change.flickity', function (event, index) {
-                $el.find('.current').text($carousel.data('flickity').selectedIndex + 1);
-            });
         });
     });
-
 </script>
 </html>
