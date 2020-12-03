@@ -1,0 +1,78 @@
+body.case-detail {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .case-detail .carousel {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+}
+
+.before-after {
+  color: #E98731;
+  font-size: 18px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: num;
+  padding: 0;
+}
+
+ol li {
+  counter-increment: num;
+  position: relative;
+	margin: 5px 0 5px 30px;
+	padding: 0 0 0 0;
+}
+
+ol li::before {
+  content: counter(num);
+  color: #55A18C;
+  position: absolute;
+	left: -30px;
+	top: 0;
+	text-align: right;
+}
+
+ol li:nth-child(-n+9):before {
+	content: "0" counter(num);
+}
+
+.case-detail h1{
+  margin-bottom: 95px;
+}
+
+.case-detail h3{
+  font-size: 20px;
+  color: #E98731;
+}
+
+#honest-and-rare-about {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
+.case-detail section {
+  margin: 0 0 90px 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+}

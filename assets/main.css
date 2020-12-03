@@ -91,6 +91,13 @@ h1.gray {
   text-decoration: none;
 }
 
+.top a.home-link {
+  float: left;
+  font-family: 'Prosto One', sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-left: 100px;
+}
 
 .meet .c2{
   padding: 120px 0 0 55px;
