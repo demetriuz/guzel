@@ -22,6 +22,7 @@
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Prosto+One&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/case.css">
   <link rel="stylesheet" href="assets/main.css">
@@ -32,6 +33,19 @@
 
 <body class="case-detail">
 
+<!--
+<div class="topnav-hamburger">
+  <a href="#">&nbsp;</a>
+  <div id="myLinks">
+    <a href="#news">Главная страница</a>
+    <a href="#contact">Honest&Rare</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+-->
+
 <section class="top desktop">
   <a href="/" class="home-link">Гузель Лазарко</a>
   <a href="mailto:guzel@lazarko.com">guzel@lazarko.com</a>
@@ -39,6 +53,18 @@
   <a href="tg://resolve?domain=lazarko" target="_blank" class="desktop">Telegram</a>
   <a href="https://www.behance.net/guzellazarko" target="_blank">Behance</a>
 </section>
+
+
+<section class="top mobile">
+  <a href="/" class="home-link">Гузель Лазарко</a>
+  <a href="mailto:guzel@lazarko.com">Email</a>
+<!--  <a href="tel:+79169220090">P</a>-->
+  <a href="tg://resolve?domain=lazarko" target="_blank">Telegram</a>
+  <a href="https://hh.ru/" target="_blank">Резюме</a>
+<!--  <a href="https://www.behance.net/guzellazarko" target="_blank">B</a>-->
+</section>
+
+
 
 <section>
   <h1>Редизайн корзины сайта “Honest&Rare”</h1>
@@ -52,6 +78,11 @@
 
   <h3>Решение</h3>
   <br>
+
+  <div class="video-container">
+    <iframe class="video" src="https://www.youtube.com/embed/h0685vabMOw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
   <h2>Разработан чистый и современный дизайн</h2>
 
   <p>Раньше корзина воспринималась загроможденно и тяжело.
@@ -59,12 +90,12 @@
 
   <span class="before-after">Было</span>
   <div class="carousel">
-    <img class="carousel-image" data-flickity-lazyload="./assets/img/honest-and-rare/img1.jpg">
+    <img class="carousel-image" data-flickity-lazyload="./assets/img/honest-and-rare/img1.png">
   </div>
 
   <span class="before-after">Стало</span>
   <div class="carousel">
-    <img class="carousel-image" data-flickity-lazyload="./assets/img/honest-and-rare/img2.jpg">
+    <img class="carousel-image" data-flickity-lazyload="./assets/img/honest-and-rare/img2.png">
   </div>
 </section>
 
@@ -126,18 +157,18 @@
     <li>Fashion: Avocado, Asos, J.Crew</li>
   </ol>
   <p><strong>На основе анализа составлен  чек-лист для проверки интерфейса корзины:</strong></p>
-  <ol>
-    <li>Сумма заказа рассчитывается  с учетом всех скидок и дополнительных расходов</li>
-    <li>Автоматический перерасчет суммы при изменении количества/удалении товаров </li>
-    <li>Есть возможность изменить количество и удалить товар из корзины</li>
-    <li>Есть кнопка очищения корзины</li>
-    <li>Перед удалением товара предлагается диалог с подтверждением или отменой действия</li>
-    <li>Кнопка «Оформить заказ» первой бросается в глаза</li>
-    <li>Название товара и поставщика — кликабельные ссылки</li>
-    <li>Есть возможность отложить товар из корзины в избранное</li>
-    <li>Есть возможность ввести и применить промокод</li>
-    <li>Из корзины есть доступ в каталог</li>
-    <li>В корзине присутствуют блоки с товарами, которые могут идти в дополнение к основной покупке. </li>
+  <ol class="ol-table">
+    <li>Сумма заказа рассчитывается  с учетом всех скидок и дополнительных расходов <span class="row-status row-status-ok"></span></li>
+    <li>Автоматический перерасчет суммы при изменении количества/удалении товаров <span class="row-status row-status-ok"></span></li>
+    <li>Есть возможность изменить количество и удалить товар из корзины <span class="row-status row-status-ok"></span></li>
+    <li>Есть кнопка очищения корзины <span class="row-status row-status-ok"></span></li>
+    <li>Перед удалением товара предлагается диалог с подтверждением или отменой действия <span class="row-status row-status-progress"></span></li>
+    <li>Кнопка «Оформить заказ» первой бросается в глаза <span class="row-status row-status-ok"></span></li>
+    <li>Название товара и поставщика — кликабельные ссылки <span class="row-status row-status-ok"></span></li>
+    <li>Есть возможность отложить товар из корзины в избранное <span class="row-status row-status-progress"></span></li>
+    <li>Есть возможность ввести и применить промокод <span class="row-status row-status-ok"></span></li>
+    <li>Из корзины есть доступ в каталог <span class="row-status row-status-ok"></span></li>
+    <li>В корзине присутствуют блоки с товарами, которые могут идти в дополнение к основной покупке. <span class="row-status row-status-progress"></span></li>
   </ol>
 </section>
 
@@ -150,7 +181,7 @@
     плохая товарная карточка и процесс оформления заказа, включая страницу корзины.</p>
 
   <div class="carousel">
-    <img class="carousel-image" data-flickity-lazyload="./assets/img/honest-and-rare/img11.jpg">
+    <img class="carousel-image" data-flickity-lazyload="./assets/img/honest-and-rare/img11.png">
   </div>
 </section>
 
@@ -189,6 +220,16 @@
           });
       });
   });
+
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+      }
+  }
+
 </script>
 
 </html>

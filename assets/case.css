@@ -1,13 +1,47 @@
+body {
+  background: url("img/honest-and-rare/bg.svg") no-repeat top;
+  background-size: contain;
+}
+
+.top.mobile {
+  text-align: right;
+  padding: 0 15px;
+}
+
+.top.mobile a.home-link {
+  padding-left: 0;
+  font-size: 14px;
+}
+
+
 body.case-detail {
   max-width: 1000px;
   margin: auto;
 }
+
 
 @media (min-width: 1000px) {
   .case-detail .carousel {
     margin-left: -100px;
     margin-right: -100px;
   }
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*height: 126%;*/
 }
 
 .before-after {
@@ -69,7 +103,40 @@ h2 {
   line-height: 38px;
 }
 
+.ol-table {
+  width: calc(100% - 60px);
+}
+
+.row-status {
+  margin-right: -60px;
+  float: right;
+}
+
+.row-status-ok::after {
+  content: url("img/honest-and-rare/green-check.svg");
+}
+
+.row-status-progress::after {
+  color: #E98731;
+  content: "в работе";
+}
+
+
 @media (max-width: 1000px) {
+  .top:not(:first-child) a{
+    padding-left: 20px;
+  }
+
+  .row-status-progress::after {
+    background-image: url("img/honest-and-rare/orange-check.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content:"";
+  }
+
   h2 {
     font-size: 14px;
     line-height: 22px;
