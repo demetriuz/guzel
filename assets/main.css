@@ -38,8 +38,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
-h1, h2 {
-  font-family: 'Prosto One', sans-serif;
+h1, h2, h3 {
+  /*font-family: 'Prosto One', sans-serif;*/
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
 
 h3 {
@@ -73,7 +75,7 @@ section:nth-child(1), section:nth-child(2) {
 h1.gray {
   color: gray;
   margin: 50px 0 100px 0;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .c1, .c2, .c3 {
@@ -93,20 +95,38 @@ h1.gray {
 
 .top a.home-link {
   float: left;
-  font-family: 'Prosto One', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   color: black;
   padding-left: 100px;
 }
 
+
+.top.mobile {
+  text-align: right;
+  padding: 0 15px;
+}
+
+.top.mobile a.home-link {
+  padding-left: 0;
+  font-size: 14px;
+}
+
+.meet {
+  padding-top: 120px;
+  margin-top: 0;
+}
+
 .meet .c2{
-  padding: 120px 0 0 55px;
+  /*padding: 120px 0 0 55px;*/
+  /*padding: 120px 0 0 0;*/
+  padding: 0;
 }
 
 .meet h1 {
   font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
+  /*font-weight: normal;*/
+  font-size: 40px;
   line-height: 48px;
 }
 
@@ -120,10 +140,10 @@ h1.gray {
 
 .meet .c1 {
   width: 360px;
-  padding-top: 54px;
+  /*padding-top: 54px;*/
 }
 .meet .c2 {
-  padding-left: 60px;
+  /*padding-left: 60px;*/
 }
 .meet .c2_inner{
   display: flex;
@@ -136,6 +156,15 @@ h1.gray {
 }
 .meet .c2_2 {
   padding-left: 60px;
+}
+
+.meet .c2_inner {
+  display: block;
+  padding-top: 60px;
+}
+
+.meet .c2_inner .c2_2 {
+  padding-left: 0;
 }
 
 .portfolio {
@@ -181,7 +210,7 @@ h1.gray {
 }
 
 .project-l .c1, .project-r .c2 {
-  padding-top: 90px;
+  padding-top: 20px;
 }
 
 .project-r .c1, .project-l .c2 {
@@ -240,7 +269,7 @@ h1.gray {
 
 .about-me .c1 {
   /*width: 50%;*/
-  font-family: 'Prosto One', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -267,7 +296,7 @@ h1.gray {
 
 .contacts a {
   text-decoration: none;
-  font-family: 'Prosto One', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: black;
   text-decoration: none;
   font-style: normal;
@@ -281,12 +310,12 @@ h1.gray {
 }
 
 .contacts .icons a {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .contacts img {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 @media (max-width: 1390px) {
@@ -304,16 +333,16 @@ h1.gray {
   }
 }
 
-@media (max-width: 1220px) {
-  .meet .c2_inner {
-    display: block;
-    padding-top: 60px;
-  }
+/*@media (max-width: 1220px) {*/
+/*  .meet .c2_inner {*/
+/*    display: block;*/
+/*    padding-top: 60px;*/
+/*  }*/
 
-  .meet .c2_inner .c2_2 {
-    padding-left: 0;
-  }
-}
+/*  .meet .c2_inner .c2_2 {*/
+/*    padding-left: 0;*/
+/*  }*/
+/*}*/
 
 
 @media (max-width: 1000px) {
@@ -324,7 +353,7 @@ h1.gray {
 
   h1, .meet h1 {
     line-height: 28px;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   section:first-child {
@@ -364,8 +393,16 @@ h1.gray {
     justify-content: center;
   }
 
+  .top:not(:first-child) a{
+    padding-left: 20px;
+  }
+
   .meet {
     padding-top: 60px;
+  }
+
+  .meet .flex {
+    display: block;
   }
 
   .meet .c1 {
@@ -379,6 +416,7 @@ h1.gray {
   }
   .meet .c2 {
     padding: 0 0 0 20px;
+    text-align: center;
   }
 
   .meet .c2_inner {
@@ -395,7 +433,9 @@ h1.gray {
   }
 
   .portrait.mobile {
-    margin-top: -10px;
+    /*margin-top: -10px;*/
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   .portfolio {

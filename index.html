@@ -21,7 +21,9 @@
     gtag('config', 'UA-159343691-1');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Prosto+One&display=swap" rel="stylesheet">
+<!--  <link href="https://fonts.googleapis.com/css?family=Prosto+One&display=swap" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="assets/js/flickity/flickity.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -31,21 +33,29 @@
 <body>
 
 <section class="top desktop">
+  <a href="/" class="home-link"><img src="./assets/img/logo.svg" alt="Логотип"></a>
   <a href="mailto:guzel@lazarko.com">guzel@lazarko.com</a>
   <a href="tel:+79169220090">+7 916 922 00 90</a>
   <a href="tg://resolve?domain=lazarko" target="_blank" class="desktop">Telegram</a>
   <a href="https://www.behance.net/guzellazarko" target="_blank">Behance</a>
 </section>
 
+
+<section class="top mobile">
+  <a href="/" class="home-link"><img src="./assets/img/logo.svg" alt="Логотип"></a>
+  <a href="mailto:guzel@lazarko.com">Email</a>
+  <a href="tg://resolve?domain=lazarko" target="_blank">Telegram</a>
+</section>
+
+
 <section class="meet">
+  <img class="portrait mobile" width="100" height="100" src="./assets/img/me_mob.jpg" alt="Гузель Лазарко">
+
   <div class="flex">
-    <div class="c1">
-      <img class="portrait desktop" width="340" height="500" src="./assets/img/me_dsk.jpg"
-           alt="Гузель Лазарко">
-      <img class="portrait mobile" width="100" height="100" src="./assets/img/me_mob.jpg" alt="Гузель Лазарко">
-    </div>
+
     <div class="c2">
-      <h1>Привет! <br>Меня зовут Гузель, <span class="nowrap">я дизайнер</span> интерфейсов</h1>
+      <h1>Привет, меня зовут Гузель 👋🏼<br>я дизайнер интерфейсов</h1>
+<!--      <h1>Привет! <br>Меня зовут Гузель, <span class="nowrap">я дизайнер</span> интерфейсов</h1>-->
 
       <div class="c2_inner desktop">
         <div class="c2_1">
@@ -71,6 +81,13 @@
         </div>
       </div>
     </div>
+
+    <div class="c1">
+      <img class="portrait desktop" width="340" height="500" src="./assets/img/me_dsk.jpg"
+           alt="Гузель Лазарко">
+<!--      <img class="portrait mobile" width="100" height="100" src="./assets/img/me_mob.jpg" alt="Гузель Лазарко">-->
+    </div>
+
   </div>
 
   <div class="mobile">
@@ -104,6 +121,21 @@
 
 <section class="portfolio">
   <h1 class="gray">Портфолио</h1>
+
+  <div class="project project-r">
+    <div class="c2">
+      <h2>Honest&Rare</h2>
+      <p>
+        UX-дизайн корзины сайта маркетплейса для разных разрешений экранов<br>
+        <a href="./case-honest-and-rare.html">Подробнее →</a>
+      </p>
+    </div>
+    <div class="c1">
+      <div class="carousel">
+        <img class="carousel-image" data-flickity-lazyload="./assets/img/case5_0.png">
+      </div>
+    </div>
+  </div>
 
   <div class="project project-l">
     <div class="c1">
@@ -211,16 +243,33 @@
 <section class="contacts">
   <h1 class="gray">Контакты</h1>
 
-  <a href="mailto:guzel@lazarko.com">guzel@lazarko.com</a><br>
-  <a href="tel:+79169220090">+7 916 922 00 90</a>
+<!--  <a href="mailto:guzel@lazarko.com">guzel@lazarko.com</a><br>-->
+<!--  <a href="tel:+79169220090">+7 916 922 00 90</a>-->
 
   <div class="icons">
+    <a href="mailto:guzel@lazarko.com" target="_blank">
+      <img src="./assets/img/icons/mail.svg" alt="">
+    </a>
+    <a href="tg://resolve?domain=lazarko" target="_blank">
+      <img src="./assets/img/icons/telega.svg" alt="">
+    </a>
+    <a href="tel:+79169220090" target="_blank">
+      <img src="./assets/img/icons/phone.svg" alt="">
+    </a>
+    <a href="https://hh.ru/resume/e88a22d0ff078872e80039ed1f5464516d6757" target="_blank">
+      <img src="./assets/img/icons/hh.svg" alt="">
+    </a>
+    <a href="https://www.behance.net/guzellazarko" target="_blank">
+      <img src="./assets/img/icons/behance.svg" alt="">
+    </a>
+    <!--
     <a href="tg://resolve?domain=lazarko" target="_blank">
       <img src="./assets/img/telega_dsk.svg">
     </a>
     <a href="https://www.behance.net/guzellazarko" target="_blank">
       <img src="./assets/img/behance_dsk.svg">
     </a>
+    -->
   </div>
 </section>
 
@@ -238,7 +287,7 @@
                 initialIndex: 0,
                 fullscreen: true,
                 lazyLoad: 2,
-                pageDots: true
+                pageDots: idx !== 0
             });
         });
     });
