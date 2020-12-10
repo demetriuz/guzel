@@ -84,7 +84,7 @@ h1.gray {
 
 .top {
   text-align: right;
-  padding: 20px 100px 20px 0;
+  padding: 40px 100px 20px 0;
 }
 
 .top a {
@@ -102,7 +102,6 @@ h1.gray {
 }
 
 
-
 .top.mobile {
   text-align: right;
   padding: 20px 15px 0 15px;
@@ -112,6 +111,11 @@ h1.gray {
   padding-left: 0;
   font-size: 14px;
 }
+
+.portrait.desktop {
+  padding-left: 30px;
+}
+
 
 .meet {
   padding-top: 120px;
@@ -319,20 +323,20 @@ h1.gray {
   width: 60px;
 }
 
-@media (max-width: 1390px) {
-  .meet .c2 {
-    padding-top: 54px;
-  }
-  .project-r .c2 {
-    padding-top: 0;
-  }
-  .project-l .c1 {
-    padding-top: 0;
-  }
-  .carousel-arrows {
-    padding-bottom: 0;
-  }
-}
+/*@media (max-width: 1390px) {*/
+/*  .meet .c2 {*/
+/*    padding-top: 54px;*/
+/*  }*/
+/*  .project-r .c2 {*/
+/*    padding-top: 0;*/
+/*  }*/
+/*  .project-l .c1 {*/
+/*    padding-top: 0;*/
+/*  }*/
+/*  .carousel-arrows {*/
+/*    padding-bottom: 0;*/
+/*  }*/
+/*}*/
 
 /*@media (max-width: 1220px) {*/
 /*  .meet .c2_inner {*/
@@ -347,6 +351,11 @@ h1.gray {
 
 
 @media (max-width: 900px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   section {
     margin-top: 60px;
     padding: 0 15px;
@@ -376,7 +385,7 @@ h1.gray {
 
   h1.gray {
     margin: 0;
-    font-size: 29px;
+    font-size: 22px;
   }
 
   .top {
@@ -436,6 +445,10 @@ h1.gray {
 
   .meet .c2_1, .meet .c2_2 {
     padding-top: 40px;
+  }
+
+  .meet h3 {
+    font-size: 18px;
   }
 
   .portrait.mobile {
@@ -514,10 +527,22 @@ h1.gray {
     padding: 20px 0;
   }
 
+  .experience .row1 {
+    padding-top: 10px;
+  }
+
   .contacts h1.gray {
     margin-bottom: 10px;
   }
 
+
+  .portfolio .gray {
+    padding-bottom: 20px;
+  }
+
+  .contacts .gray {
+    padding-bottom: 20px;
+  }
 
   /*.contacts .flex {*/
   /*  display: block;*/

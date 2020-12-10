@@ -139,10 +139,10 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  body.case-detail {
-    font-size: 14px;
-    line-height: 20px;
-  }
+  /*body.case-detail {*/
+  /*  font-size: 14px;*/
+  /*  line-height: 20px;*/
+  /*}*/
 
   body.case-detail h2, #honest-and-rare-about{
     font-weight: 600;
@@ -152,7 +152,11 @@ h2 {
 
   #honest-and-rare-about {
     margin-top: 30px;
-    /*margin-bottom: 30px;*/
+    margin-bottom: 30px;
+  }
+
+  .case-detail h1 {
+    margin-bottom: 60px;
   }
 
   .case-detail h3 {
@@ -193,6 +197,15 @@ h2 {
 
   .row-status {
     display: none;
+  }
+
+
+  ol li {
+	  margin: 5px 0 5px 25px;
+  }
+
+  ol li::before {
+    left: -25px;
   }
 
 }
