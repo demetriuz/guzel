@@ -25,14 +25,6 @@ body.case-detail {
 }
 
 
-@media (min-width: 1000px) {
-  .case-detail .carousel {
-    margin-left: -100px;
-    margin-right: -100px;
-  }
-}
-
-
 .video-container {
     position: relative;
     width: 100%;
@@ -52,7 +44,7 @@ body.case-detail {
 
 .before-after {
   color: #E98731;
-  font-size: 18px;
+  /*font-size: 18px;*/
 }
 
 ol {
@@ -141,10 +133,39 @@ h2 {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   /*.top:not(:first-child) a{*/
   /*  padding-left: 20px;*/
   /*}*/
+
+  body.case-detail {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  body.case-detail h2, #honest-and-rare-about{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #honest-and-rare-about {
+    margin-top: 30px;
+    /*margin-bottom: 30px;*/
+  }
+
+  .case-detail h3 {
+    font-size: 18px;
+  }
+
+  .case-detail .carousel {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+
+  .case-detail section {
+    margin: 0 0 60px 0;
+  }
 
   .row-status-progress::after {
     background-image: url("img/honest-and-rare/orange-check.svg");
@@ -159,6 +180,10 @@ h2 {
   h2 {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .img-center {
+    width: 60%;
   }
 
 }

@@ -102,9 +102,10 @@ h1.gray {
 }
 
 
+
 .top.mobile {
   text-align: right;
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
 }
 
 .top.mobile a.home-link {
@@ -345,7 +346,7 @@ h1.gray {
 /*}*/
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   section {
     margin-top: 60px;
     padding: 0 15px;
@@ -382,7 +383,7 @@ h1.gray {
     display: flex;
     padding: 0 10px 20px 10px;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .top a {
@@ -391,6 +392,11 @@ h1.gray {
   .top a {
     flex: 1 1 25%;
     justify-content: center;
+  }
+
+  .top a img {
+    width: 20px;
+    height: 33px;
   }
 
   .top:not(:first-child) a{
