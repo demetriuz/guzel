@@ -495,8 +495,12 @@ h1.gray {
     margin-top: 5px;
   }
 
+
+  .project-l .c1, .project-r .c2 {
+    padding-top: 0;
+  }
   .project-l .c1 {
-    padding-top: 30px;
+    /*padding-top: 30px;*/
   }
 
   .project-r, .project-l {
